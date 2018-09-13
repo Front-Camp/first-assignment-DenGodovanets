@@ -8,7 +8,8 @@
  * isObject(null); // false
  */
 const isObject = data => {
-  /* your logic here...*/
+  return data === {};
+
 };
 
 export default isObject;

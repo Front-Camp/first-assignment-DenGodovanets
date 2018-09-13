@@ -1,3 +1,5 @@
+import { error } from "util";
+
 /**
 * This function should return sum of two numbers
 *
@@ -10,7 +12,9 @@
 * sum(-1, 13); // 12
 */
 const sum = (a, b) => {
-  /* your logic here...*/
+  if (typeof a === 'number' && typeof b === 'number') { return a + b }
+  else { throw false; }
+
 };
 
 export default sum;
